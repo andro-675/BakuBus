@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/fab_margin"
+    android:background="@drawable/round_white_background"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginStart="@dimen/margin10"
+    android:layout_marginEnd="@dimen/margin10"
+    android:layout_marginBottom="@dimen/margin10">
+
+    <TextView
+        android:id="@+id/text_view_number_of_bus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font16"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        tools:text="Number Of Bus"/>
+
+</LinearLayout>

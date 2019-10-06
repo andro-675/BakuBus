@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="switch_button_width">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+
+    <dimen name="bus_list_height">300dp</dimen>
+
+    <dimen name="font16">16sp</dimen>
+    <dimen name="font20">20sp</dimen>
+    <dimen name="font14">14sp</dimen>
+
+</resources>
