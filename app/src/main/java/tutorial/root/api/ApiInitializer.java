@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiInitializer {
 
     private static ApiInitializer instance = null;
-    private final String BASE_URL = "https://www.bakubus.az/";
+    private static final String BASE_URL = "https://www.bakubus.az/";
 
     private static Retrofit retrofit = null;
 

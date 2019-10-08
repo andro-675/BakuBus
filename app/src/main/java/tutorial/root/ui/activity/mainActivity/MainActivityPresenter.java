@@ -11,7 +11,7 @@ import retrofit2.Callback;
 import tutorial.root.interactor.activity.MainActivityInteractor;
 import tutorial.root.pojo.response.Bus;
 import tutorial.root.pojo.response.Response;
-import tutorial.root.utils.Algorithims;
+import tutorial.root.utils.Algorithms;
 
 class MainActivityPresenter implements MainActivityContractor.Presenter {
 
@@ -55,12 +55,12 @@ class MainActivityPresenter implements MainActivityContractor.Presenter {
     //the main process after receiving data from API
     @Override
     public void prepareDataForUser(List<Bus> allRawBusList) {
-        allSortedBusList = Algorithims.sortBusesAccordingToCodes(allRawBusList);
-        sortedBusListForUser = Algorithims.createBusListForUser(allSortedBusList);
+        allSortedBusList = Algorithms.sortBusesAccordingToCodes(allRawBusList);
+        sortedBusListForUser = Algorithms.createBusListForUser(allSortedBusList);
 
         if (selectedBusCode != null && selectedBusRoute != null)
         {
-            filteredBusListForSpecificRoute = Algorithims.filterForSpecificRoute(
+            filteredBusListForSpecificRoute = Algorithms.filterForSpecificRoute(
                     selectedBusCode,
                     selectedBusRoute,
                     allSortedBusList
@@ -94,7 +94,7 @@ class MainActivityPresenter implements MainActivityContractor.Presenter {
     //for drawing polyline according to current bus list data
     @Override
     public void calculateCurrentSpecificBusRoute() {
-        filteredBusListForSpecificRoute = Algorithims.filterForSpecificRoute(selectedBusCode, selectedBusRoute, allSortedBusList);
+        filteredBusListForSpecificRoute = Algorithms.filterForSpecificRoute(selectedBusCode, selectedBusRoute, allSortedBusList);
         calculateSpecificBusRoute();
     }
 

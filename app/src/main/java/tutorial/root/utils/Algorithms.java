@@ -7,7 +7,7 @@ import java.util.List;
 
 import tutorial.root.pojo.response.Bus;
 
-public class Algorithims {
+public class Algorithms {
 
     public static List<Bus> sortBusesAccordingToCodes (List<Bus> allBusList)
     {
